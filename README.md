@@ -29,9 +29,9 @@
 
 #### J-type (jump type)
 
-  |B31-26 |   B25- 0   |
-  ------- | ---------- |
-  |opcode |   target   |
+    |B31-26 |   B25- 0   |
+    ------- | ---------- |
+    |opcode |   target   |
 
     – เป็นคำสั่งที่มี imm มากสุดคือ 26 bit
 
@@ -43,16 +43,16 @@
   
 #### I-Type (immediate type) 
 
-  |B31-26 |   B25-21   |	 B20-16 |  B15-0  |
-  ------- | ---------- | ---------- | ------- |
-  |opcode | register s | register t | address |
+   |B31-26 |   B25-21   |	 B20-16 |  B15-0   |
+   ------- | ---------- | ---------- | ------- |
+   |opcode | register s | register t | address |
   
     – มีรีจิสเตอร์อยู่ 2 ตัวคือ rs,rt แล้วตามด้วย immediate ซึ่งต้องเป็น 2’s complement เท่านั้น
 
 #### R-Type (Register
-  |B31-26 |   B25-21   |   B20-16   |  B15-11    |   B10-6      |  B5-0   | 
-  ------- | ---------- | ---------- | ---------- | ------------ | ------- |
-  |opcode | register s | register t | register d | shift amount | funct   |
+   |B31-26 |   B25-21   |   B20-16   |  B15-11    |   B10-6      |  B5-0   | 
+   ------- | ---------- | ---------- | ---------- | ------------ | ------- |
+   |opcode | register s | register t | register d | shift amount | funct   |
   
     – ตัวอย่างเช่น add $3 $4 $5
     
@@ -67,12 +67,60 @@
 
 <br>**คลิปที่ 1**
 
+กล่าวถึงการทำงานของ
+
+#### j-type 
+
 *computer architecture j-type mipsc*
 
 <br>[CLIP1](https://youtu.be/-NUaUiUUi6Q)
 
 <br>**คลิปที่ 2**
-*CPU MIPS Processing*
+
+กล่าวถึง การพูดภาษาคอมไปเป็นภาษาคน
+
+#### code
+
+        class Test { 
+
+                public static void main(String[] args){
+
+                         int a = 10;
+    
+                         int b = 20;
+    
+                         int c = a+b;
+                 }
+        }
+
+#### Machine Language 
+
+     00000000:           08400000        //jumpไปที่ address  01000000 
+    
+     00000004:           1A000000        //data
+    
+     ...
+
+     01000000:           8C090004        //lw $9,$0(4) ดึงข้อมูลจากaddressของregisterที่0 + 4 นำไปเก็บไว้ที่registerที่9
+    
+     01000004:           8D210000       //lw $1,$9(0) ดึงข้อมูลจากaddressของregisterที่9 + 0 นำไปเก็บไว้ที่registerที่1
+
+     01000008:           8D220004       //lw $2,$9(4)  ดึงข้อมูลจากaddressของregisterที่9 + 4 นำไปเก็บไว้ที่registerที่2
+
+     0100000C:           00221820        //add $3,$1,$2 register3 = register1 + register2
+
+     01000010:           AD230008        //sw $9,$0(4)  นำข้อมูลจากaddressของregisterที่9 นำไปเก็บไว้ที่registerที่0 + 4 
+
+     .....
+
+     1A000000:           0000000A        //a = 10
+
+     1A000004:           00000014        //b = 20
+
+     1A000008:           0000001E        //c = 30
+    
+**CPU MIPS Processing**
+
 <br>[CLIP2](https://youtu.be/hFsSilVuIrM)
 
 <br>**คลิปที่ 3**
