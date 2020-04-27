@@ -90,7 +90,7 @@
 
 #### j-type 
 
-<br>[CLIP1](https://youtu.be/-NUaUiUUi6Q)
+<br>[CLIP1  <=== Click it](https://youtu.be/-NUaUiUUi6Q)
 
 <br>**คลิปที่ 2**
 
@@ -139,7 +139,7 @@
     
 **CPU MIPS Processing**
 
-<br>[CLIP2](https://youtu.be/hFsSilVuIrM)
+<br>[CLIP2  <=== Click it](https://youtu.be/hFsSilVuIrM)
 
 <br>**คลิปที่ 3**
 
@@ -165,7 +165,7 @@
         
      -  มี ALUout ที่เก็บค่าหลังจากคำนวณ
 
-<br>[CLIP3](https://youtu.be/G5QxbVlIw1o)
+<br>[CLIP3  <=== Click it](https://youtu.be/G5QxbVlIw1o)
 
 <br>**คลิปที่ 4**
 
@@ -184,7 +184,7 @@
         
         5.นำค่าที่อ่านมาจาก Memory ไปเก็บไว้ใน $rt (Reg[IR[20-16]] = MDR)
 
-<br>[CLIP4](https://youtu.be/6N-0znIz0XU)
+<br>[CLIP4  <=== Click it](https://youtu.be/6N-0znIz0XU)
 
 <br>**คลิปที่ 5**
 
@@ -202,7 +202,7 @@
        
         3.นำค่าจาก A และ B มาเปรียบเทียบกัน หากเท่ากันจะเก็บผลลัพธ์ที่ได้ไว้ใน ALUout แล้ว JUMP ไปยัง Address ต่อไปหากไม่เท่ากันจะข้ามไปทำคำสั่งถัดไปทันที     
 
-<br>[CLIP5](https://youtu.be/CurPkd1jGK4)
+<br>[CLIP5  <=== Click it](https://youtu.be/CurPkd1jGK4)
 
 <br>**คลิปที่ 6**
 
@@ -230,10 +230,10 @@
           MemtoReg = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ ALUout
           RegDst = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ $rd
 
-<br>[CLIP6](https://youtu.be/pd521LRO-JM)
+<br>[CLIP6  <=== Click it](https://youtu.be/pd521LRO-JM)
 
 <br>**คลิปที่ 7**
 
 #### กล่าวถึงการทำงานของ Pipelining
 
-<br>[CLIP7](https://youtu.be/l0J13kpTUMA)
+<br>[CLIP7  <=== Click it](https://youtu.be/l0J13kpTUMA)
