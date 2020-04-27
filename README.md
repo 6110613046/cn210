@@ -1,6 +1,24 @@
 # เนื้อหาต่างๆในราบวิชา CN210
 ### หน้าเว็ปนี้ได้รวนเนื้อหาคลิปวีดีโอที่เกี่ยวข้องกับการเรียนการสอนในวิชา CN210
 ### เนื้อเริ่มต้นโดยสังเขบ
+
+ส่วนประกอบของคอมพิวเตอร์ 
+
+       1.หน่วยประมวลผลกลาง หรือ CPU(Central Processing Unit)
+
+       2.main memory
+
+       3.Input/Output
+
+ส่วนประกอบในส่วนของ CPU
+
+       1.ALU(Artimetric and logic unit) ใช้ในการคำนวณและหาตรรกะทางคณิตศาสตร์
+
+       2.Register
+
+       3.Control Unit
+
+
 ![image](http://don-jai.com/wp-content/uploads/2009/11/MIPS_instruction_set.jpg)
 
 – MIP มี instruction อยู่ 3 แบบ
@@ -118,6 +136,7 @@
      1A000004:           00000014        //b = 20
 
      1A000008:           0000001E        //c = 30
+     
     
 **CPU MIPS Processing**
 
