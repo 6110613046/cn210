@@ -68,6 +68,7 @@
     – มีรีจิสเตอร์อยู่ 2 ตัวคือ rs,rt แล้วตามด้วย immediate ซึ่งต้องเป็น 2’s complement เท่านั้น
 
 #### R-Type (Register
+
    |B31-26 |   B25-21   |   B20-16   |  B15-11    |   B10-6      |  B5-0   | 
    ------- | ---------- | ---------- | ---------- | ------------ | ------- |
    |opcode | register s | register t | register d | shift amount | funct   |
@@ -88,8 +89,6 @@
 กล่าวถึงการทำงานของ
 
 #### j-type 
-
-*computer architecture j-type mipsc*
 
 <br>[CLIP1](https://youtu.be/-NUaUiUUi6Q)
 
@@ -166,11 +165,10 @@
         
      -  มี ALUout ที่เก็บค่าหลังจากคำนวณ
 
-*Single-cycle VS Multi-cycle CPU MIPS*
-
 <br>[CLIP3](https://youtu.be/G5QxbVlIw1o)
 
 <br>**คลิปที่ 4**
+
 #### การทำงานของlw ใน multi cycle
 
   ##### คำสั่ง lw ใน Multi Cycle นั้นมีทั้งหมด 5 ขั้นตอน
@@ -185,8 +183,6 @@
         4.ค่าที่ได้จาก ALUout คือ ค่าของ Address ของ Memory ที่จะถูกอ่านค่าออกมา (MDR = Memory[ALUout])
         
         5.นำค่าที่อ่านมาจาก Memory ไปเก็บไว้ใน $rt (Reg[IR[20-16]] = MDR)
-
-*การทำงานของlw ใน multi cycle*
 
 <br>[CLIP4](https://youtu.be/6N-0znIz0XU)
 
@@ -205,8 +201,6 @@
         2.นำค่า $rs และ $rt ไปเก็บไว้ที่ A,B ตามลำดับ (A = Reg[IR[25-21]]) (B = Reg[IR[20-16]])
        
         3.นำค่าจาก A และ B มาเปรียบเทียบกัน หากเท่ากันจะเก็บผลลัพธ์ที่ได้ไว้ใน ALUout แล้ว JUMP ไปยัง Address ต่อไปหากไม่เท่ากันจะข้ามไปทำคำสั่งถัดไปทันที     
-
-*การทำงานของbeqในMulti cycle*
 
 <br>[CLIP5](https://youtu.be/CurPkd1jGK4)
 
@@ -236,10 +230,10 @@
           MemtoReg = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ ALUout
           RegDst = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ $rd
 
-*R Format State machine step*
-
 <br>[CLIP6](https://youtu.be/pd521LRO-JM)
 
 <br>**คลิปที่ 7**
-**
-<br>[CLIP7]()
+
+#### กล่าวถึงการทำงานของ Pipelining
+
+<br>[CLIP7](https://youtu.be/l0J13kpTUMA)
