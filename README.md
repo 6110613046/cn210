@@ -210,6 +210,8 @@
 
 ประกอบด้วย 4 ขั้นตอน
 
+![image](https://image1.slideserve.com/3211244/slide21-n.jpg)
+
   1.      MemRead = 1 คือ ทำการอ่านค่าจาก Memory
           IorD = 1 คือ เช็คว่า PC นั้นชี้ไปที่ Address ใดใน Memory
           IRWrite = 1 คือ นำค่าจาก Address Memory ที่ถูกชี้ ไปเก็บไว้ใน IR
@@ -217,14 +219,20 @@
           ALUSrcB = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ 4 ค่าที่ถูกเขียนใน IR จะมี ALUSrcB ทำการควบคุม
           ALUOP = ADD คือ การนำค่า PC มาบวกกับ 4
           PCWrite = 1, PCSource = 1 นำผลลัพธ์การคำนวณเขียนทับที่ PC = PC + 4
+          
+![image](https://image1.slideserve.com/3211244/slide23-n.jpg)
               
   2.      ALUSrcA = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ PC
           ALUSrcB = 3 คือ Mux เลือกค่าจาก 3 ซึ่งคือ Offset
           ALUop = 0 คือ ALUop จะทำการควบคุมคำสั่ง ADD
+          
+![image](https://image1.slideserve.com/3211244/slide25-n.jpg)      
         
   3.      ALUSrcA = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ $rs
           ALUSrcB = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ $rt
           ALUop = 2 คือ ALUop จะทำการควบคุมคำสั่งให้เป็นไปตามคำสั่งใน IR
+          
+![image](https://image1.slideserve.com/3211244/slide27-n.jpg)          
  
   4.      RegWrite = 1 คือ นำค่าจาก ALUout มาเขียนใน $rd
           MemtoReg = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ ALUout
@@ -235,5 +243,13 @@
 <br>**คลิปที่ 7**
 
 #### กล่าวถึงการทำงานของ Pipelining
+
+![image](http://3.bp.blogspot.com/-6RQaYhlYk2k/UKTYQVX9csI/AAAAAAAAAGQ/0xF1OxF_N_Y/s1600/02-What-is-pipelining-01.png)
+
+จากภาพข้างบน คือ การทำงานปกติซึ่งใช้เวลานาน
+
+![image](http://2.bp.blogspot.com/-4YXOlZ30iCQ/UKTYR4Y4FLI/AAAAAAAAAGk/pCdSkaaazVA/s1600/02-What-is-pipelining-02.png)
+
+จากภาพข้างบนคือการทำงานของ Pipelining ซึ่งใช้เวลาน้อยกว่า
 
 <br>[CLIP7  <=== Click it](https://youtu.be/l0J13kpTUMA)
