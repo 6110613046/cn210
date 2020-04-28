@@ -88,7 +88,7 @@
 
 กล่าวถึงการทำงานของ
 
-#### j-type 
+#### R-type 
 
 <br>[CLIP1  <=== Click it](https://youtu.be/-NUaUiUUi6Q)
 
